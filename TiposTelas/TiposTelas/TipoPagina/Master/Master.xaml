@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:master="clr-namespace:TiposTelas.TipoPagina.Master"
+             x:Class="TiposTelas.TipoPagina.Master.Master">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Text="Pagina 1" Clicked="Button_Clicked" BackgroundColor="Transparent" BorderColor="Transparent"/>
+                <Button Text="Pagina 2" Clicked="Button_Clicked_1" BackgroundColor="Transparent" BorderColor="Transparent"/>
+                <Button Text="Conteudo" Clicked="Button_Clicked_2" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <master:Conteudo>
+            
+        </master:Conteudo>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

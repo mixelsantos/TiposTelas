@@ -1,4 +1,5 @@
 ﻿using System;
+using TiposTelas.TipoPagina.Carrousel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace TiposTelas
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new IntroducaoApp();
         }
 
         protected override void OnStart()
